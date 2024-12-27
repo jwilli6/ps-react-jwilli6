@@ -7,13 +7,13 @@ export default class Docs extends React.Component {
     constructor() {
         super();
         this.state = {
-            route: window.location.hash.substr(1)
+            route: window.location.hash.substring(1)
         };
     }
 
     componentDidMount() {
         window.addEventListener("hashchange", () => {
-            this.setState({route: window.location.hash.substr(1)});
+            this.setState({route: window.location.hash.substring(1)});
         });
     }
 
