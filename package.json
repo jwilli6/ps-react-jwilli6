@@ -57,14 +57,17 @@
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.1"
   },
+  "homepage": "https://jwilli6.github.io/ps-react-jwilli6",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
     "start:docs": "node scripts/start.js",
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "build:docs": "node scripts/build.js",
+    "test": "node scripts/test.js",
+    "predeploy:docs": "npm run build:docs",
+    "deploy:docs": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -143,6 +146,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint": "^8.57.1",
+    "gh-pages": "^6.3.0",
     "npm-run-all": "^4.0.2",
     "react-docgen": "^2.14.0",
     "react-test-renderer": "^19.0.0"
