@@ -141,6 +141,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint": "^8.57.1",
     "npm-run-all": "^4.0.2",
     "react-docgen": "^2.14.0",
