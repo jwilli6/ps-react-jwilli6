@@ -26,4 +26,6 @@ jobs:
       run: npm test
 
     - name: Build project
+      env:
+        CI: false
       run: npm run build:docs
