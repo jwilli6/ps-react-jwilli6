@@ -31,6 +31,7 @@
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
+    "lts": "^2.0.0",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
@@ -67,7 +68,8 @@
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js",
     "predeploy:docs": "npm run build:docs",
-    "deploy:docs": "gh-pages -d build"
+    "deploy:docs": "gh-pages -d build",
+    "build:commonjs": "cross-env Node_ENV=production babel ./src/components --out-dir ./lib --ignore .spec.js,.test.js"
   },
   "eslintConfig": {
     "extends": [
@@ -140,16 +142,27 @@
   },
   "babel": {
     "presets": [
+      [
+        "env",
+        {
+          "modules": "commonjs"
+        }
+      ],
       "react-app"
     ]
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "babel-cli": "^6.24.1",
+    "babel-preset-react-app": "^2.2.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.57.1",
     "gh-pages": "^6.3.0",
     "npm-run-all": "^4.0.2",
     "react-docgen": "^2.14.0",
-    "react-test-renderer": "^19.0.0"
+    "react-test-renderer": "^19.0.0",
+    "rimraf": "^6.0.1"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
