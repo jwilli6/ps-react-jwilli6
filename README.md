@@ -69,12 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# React Components
-A library of React components
+# Basic React Components library
+A library of React components created for simple reuse cases
 
 ## Install
 ```
-npm install ps-react
+npm install ps-react-jwilli6
 ```
 # Docs
 [Conmponent documention](http://jwilli6.github.io/ps-react-jwilli6/)
