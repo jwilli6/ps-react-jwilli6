@@ -1,6 +1,6 @@
 {
   "name": "ps-react-jwilli6",
-  "version": "0.2.0",
+  "version": "0.1.1",
   "main": "./lib/index.js",
   "engines": {
     "node": "20 or >=22"
