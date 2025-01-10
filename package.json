@@ -78,7 +78,7 @@
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.2"
   },
-  "homepage": "http://coryhouse.github.io/ps-react/",
+  "homepage": "http://coryhouse.github.io/ps-react-jwilli6/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
