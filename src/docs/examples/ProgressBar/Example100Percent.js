@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgressBar from 'ps-react/ProgressBar';
+import ProgressBar from 'ps-react-jwilli6/ProgressBar';
 
 /** 100% progress and height 20px */
 export default function Example100Percent() {

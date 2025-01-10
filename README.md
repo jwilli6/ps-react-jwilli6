@@ -74,8 +74,8 @@ A library of React components created for simple and small reuse cases
 
 ## Install
 ```
-npm install ps-react-
+npm install ps-react-jwilli6
 ```
 # Docs
-[Conmponent documention](http://jwilli6.github.io/ps-react-/)
+[Conmponent documention](http://jwilli6.github.io/ps-react-jwilli6/)
 

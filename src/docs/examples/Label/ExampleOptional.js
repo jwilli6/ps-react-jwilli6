@@ -1,5 +1,5 @@
 import React from 'react';
-import Label from 'ps-react/Label';
+import Label from 'ps-react-jwilli6/Label';
 
 /** Optional label */
 export default function ExampleOptional() {
