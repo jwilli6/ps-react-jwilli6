@@ -1,5 +1,5 @@
 import React from 'react';
-import TextInput from 'ps-react-jwilli6/TextInput';
+import { TextInput } from 'ps-react-jwilli6';
 
 /** Optional TextBox */
 export default class ExampleOptional extends React.Component {

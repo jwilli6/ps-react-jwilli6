@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgressBar from 'ps-react-jwilli6/ProgressBar';
+import { ProgressBar } from 'ps-react-jwilli6';
 
 /** 70% progress */
 export default function Example70Percent() {
